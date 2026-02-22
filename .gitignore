@@ -43,3 +43,28 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Секреты и локальные настройки
+.env
+*.jks
+*.keystore
+*.key
+*.password
+/android/local.properties
+
+# iOS/macOS специфичное
+**/ios/Pods/
+**/macos/Pods/
+*.mo
+*.mod
+/ios/.pivotal
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
+/macos/Flutter/Generated.xcconfig
+/macos/Flutter/flutter_export_environment.sh
+
+# Логи и системный мусор
+*.log
+.DS_Store
+._*
+Thumbs.db
