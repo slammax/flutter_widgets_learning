@@ -18,8 +18,8 @@ class MainApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        body: Image.network(
-          'https://wallpapers.com/images/hd/doodle-cube-colorful-4k-phone-rptt6pq6aule4wtj.jpg',
+        body: Image.asset(
+          'assets/images/bg.jpg',
           fit: .cover,
           height: .infinity,
         ),
