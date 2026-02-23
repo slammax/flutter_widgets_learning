@@ -23,7 +23,7 @@ class MainApp extends StatelessWidget {
           child: Stack(
             children: [
               Image.asset('assets/images/bg.jpg', fit: .cover),
-              Center(child: Text('Flutter')),
+              Center(child: SizedBox(height: 300, child: Text('Flutter'))),
             ],
           ),
         ),
