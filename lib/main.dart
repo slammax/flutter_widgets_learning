@@ -21,9 +21,9 @@ class MainApp extends StatelessWidget {
         body: Center(
           child: Container(
             color: Colors.black38,
-            child: Column(
-              mainAxisAlignment: .center,
-              mainAxisSize: .min,
+            child: Row(
+              mainAxisAlignment: .start,
+              mainAxisSize: .max,
               children: [
                 Container(
                   height: 100,
