@@ -22,8 +22,7 @@ class MainApp extends StatelessWidget {
           child: Container(
             color: Colors.black38,
             child: Row(
-              mainAxisAlignment: .start,
-              mainAxisSize: .max,
+              mainAxisSize: .min,
               children: [
                 Container(
                   height: 100,
@@ -32,6 +31,7 @@ class MainApp extends StatelessWidget {
                     borderRadius: BorderRadius.circular(25),
                     color: Colors.redAccent,
                   ),
+                  child: Center(child: Text('Flutter')),
                 ),
                 Container(
                   height: 100,
