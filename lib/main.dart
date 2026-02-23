@@ -12,7 +12,6 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,
           brightness: Brightness.dark,
@@ -21,28 +20,28 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Container(
-            height: .infinity,
-            width: .infinity,
-            padding: EdgeInsets.all(50),
-            margin: EdgeInsets.all(50),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(25),
-              color: Colors.red,
-            ),
-
-            child: Container(
-              height: .infinity,
-              width: .infinity,
-              padding: EdgeInsets.all(50),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25),
-                color: Colors.orange,
-              ),
-
-              child: Text(
-                'Hello World!',
-                style: TextStyle(color: Colors.black),
-              ),
+            color: Colors.black38,
+            child: Column(
+              mainAxisAlignment: .center,
+              mainAxisSize: .min,
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.redAccent,
+                  ),
+                ),
+                Container(
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.redAccent,
+                  ),
+                ),
+              ],
             ),
           ),
         ),
