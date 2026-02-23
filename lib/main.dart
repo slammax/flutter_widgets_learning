@@ -23,14 +23,17 @@ class MainApp extends StatelessWidget {
           leading: Icon(Icons.adb),
           title: Text('Title of AppBar'),
         ),
-        body: Padding(
-          padding: EdgeInsets.all(50),
-          child: Stack(
-            children: [
-              Image.asset('assets/images/bg.jpg', fit: .cover),
-              Center(child: SizedBox(height: 300, child: Text('Flutter'))),
-            ],
-          ),
+        body: Stack(
+          children: [
+            Center(child: SizedBox(height: 300, child: Text('Flutter'))),
+            ListTile(
+              tileColor: Colors.redAccent,
+              leading: Icon(Icons.yard_outlined),
+              title: Text('data'),
+              trailing: Text('trailing'),
+              onTap: () {},
+            ),
+          ],
         ),
       ),
     );
