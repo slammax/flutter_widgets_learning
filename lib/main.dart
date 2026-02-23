@@ -18,32 +18,10 @@ class MainApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        body: Center(
-          child: Container(
-            color: Colors.black38,
-            child: Row(
-              mainAxisSize: .min,
-              children: [
-                Container(
-                  height: 100,
-                  width: 100,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(25),
-                    color: Colors.redAccent,
-                  ),
-                  child: Center(child: Text('Flutter')),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(25),
-                    color: Colors.redAccent,
-                  ),
-                ),
-              ],
-            ),
-          ),
+        body: Image.network(
+          'https://wallpapers.com/images/hd/doodle-cube-colorful-4k-phone-rptt6pq6aule4wtj.jpg',
+          fit: .cover,
+          height: .infinity,
         ),
       ),
     );
