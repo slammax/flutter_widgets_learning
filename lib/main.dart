@@ -18,7 +18,35 @@ class MainApp extends StatelessWidget {
           brightness: Brightness.dark,
         ),
       ),
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            height: .infinity,
+            width: .infinity,
+            padding: EdgeInsets.all(50),
+            margin: EdgeInsets.all(50),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(25),
+              color: Colors.red,
+            ),
+
+            child: Container(
+              height: .infinity,
+              width: .infinity,
+              padding: EdgeInsets.all(50),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                color: Colors.orange,
+              ),
+
+              child: Text(
+                'Hello World!',
+                style: TextStyle(color: Colors.black),
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
