@@ -18,6 +18,11 @@ class MainApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).primaryColor,
+          leading: Icon(Icons.adb),
+          title: Text('Title of AppBar'),
+        ),
         body: Padding(
           padding: EdgeInsets.all(50),
           child: Stack(
