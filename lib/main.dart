@@ -18,10 +18,11 @@ class MainApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        body: Image.asset(
-          'assets/images/bg.jpg',
-          fit: .cover,
-          height: .infinity,
+        body: Stack(
+          children: [
+            Image.asset('assets/images/bg.jpg', fit: .cover),
+            Center(child: Text('Flutter')),
+          ],
         ),
       ),
     );
