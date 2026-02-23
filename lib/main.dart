@@ -23,16 +23,16 @@ class MainApp extends StatelessWidget {
           leading: Icon(Icons.adb),
           title: Text('Title of AppBar'),
         ),
-        body: Stack(
+        body: Wrap(
           children: [
-            Center(child: SizedBox(height: 300, child: Text('Flutter'))),
-            ListTile(
-              tileColor: Colors.redAccent,
-              leading: Icon(Icons.yard_outlined),
-              title: Text('data'),
-              trailing: Text('trailing'),
-              onTap: () {},
-            ),
+            Text('djaenfwueuwonouwrngvowi'),
+            Text('djaenfwueuwonouwrngvowi'),
+            Text('djaenfwueuwonouwrngvowi'),
+            Text('djaenfwueuwonouwrngvowi'),
+            Text('djaenfwueuwonouwrngvowi'),
+            Text('djaenfwueuwonouwrngvowi'),
+            Text('djaenfwueuwonouwrngvowi'),
+            Text('djaenfwueuwonouwrngvowi'),
           ],
         ),
       ),
