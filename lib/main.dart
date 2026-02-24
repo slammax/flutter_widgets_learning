@@ -20,6 +20,17 @@ class MainApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text('Flutter'), centerTitle: true),
+        floatingActionButton: Column(
+          mainAxisSize: .min,
+          children: [
+            FloatingActionButton(child: Icon(Icons.add), onPressed: () => {}),
+            SizedBox(height: 10),
+            FloatingActionButton(
+              child: Icon(Icons.remove),
+              onPressed: () => {},
+            ),
+          ],
+        ),
         bottomNavigationBar: NavigationBar(
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
