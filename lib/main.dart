@@ -18,31 +18,31 @@ class MainApp extends StatelessWidget {
           brightness: Brightness.dark,
         ),
       ),
-      home: Scaffold(
-        appBar: AppBar(title: Text('Flutter'), centerTitle: true),
-        drawer: Drawer(
-          child: Column(
-            children: [DrawerHeader(child: ListTile(title: Text('drawer')))],
+      home: SafeArea(
+        child: Scaffold(
+          appBar: AppBar(title: Text('Flutter'), centerTitle: true),
+          drawer: Drawer(
+            child: Column(children: [ListTile(title: Text('drawer'))]),
           ),
-        ),
-        floatingActionButton: Column(
-          mainAxisSize: .min,
-          children: [
-            FloatingActionButton(child: Icon(Icons.add), onPressed: () => {}),
-            SizedBox(height: 10),
-            FloatingActionButton(
-              child: Icon(Icons.remove),
-              onPressed: () => {},
-            ),
-          ],
-        ),
-        bottomNavigationBar: NavigationBar(
-          destinations: [
-            NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-            NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
-          ],
-          selectedIndex: 1,
-          onDestinationSelected: (value) => {},
+          floatingActionButton: Column(
+            mainAxisSize: .min,
+            children: [
+              FloatingActionButton(child: Icon(Icons.add), onPressed: () => {}),
+              SizedBox(height: 10),
+              FloatingActionButton(
+                child: Icon(Icons.remove),
+                onPressed: () => {},
+              ),
+            ],
+          ),
+          bottomNavigationBar: NavigationBar(
+            destinations: [
+              NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+              NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+            ],
+            selectedIndex: 1,
+            onDestinationSelected: (value) => {},
+          ),
         ),
       ),
     );
