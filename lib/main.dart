@@ -11,11 +11,20 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.teal,
           brightness: Brightness.dark,
+        ),
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter'),
+          centerTitle: true,
+          leading: Icon(Icons.login),
+          actions: [Text('data')],
+          backgroundColor: Colors.teal,
         ),
       ),
     );
