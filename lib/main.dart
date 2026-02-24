@@ -20,6 +20,11 @@ class MainApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text('Flutter'), centerTitle: true),
+        drawer: Drawer(
+          child: Column(
+            children: [DrawerHeader(child: ListTile(title: Text('drawer')))],
+          ),
+        ),
         floatingActionButton: Column(
           mainAxisSize: .min,
           children: [
