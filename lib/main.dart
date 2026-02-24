@@ -11,29 +11,11 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: Scaffold(),
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
+          seedColor: Colors.teal,
           brightness: Brightness.dark,
-        ),
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).primaryColor,
-          leading: Icon(Icons.adb),
-          title: Text('Title of AppBar'),
-        ),
-        body: Wrap(
-          children: [
-            Text('djaenfwueuwonouwrngvowi'),
-            Text('djaenfwueuwonouwrngvowi'),
-            Text('djaenfwueuwonouwrngvowi'),
-            Text('djaenfwueuwonouwrngvowi'),
-            Text('djaenfwueuwonouwrngvowi'),
-            Text('djaenfwueuwonouwrngvowi'),
-            Text('djaenfwueuwonouwrngvowi'),
-            Text('djaenfwueuwonouwrngvowi'),
-          ],
         ),
       ),
     );
