@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/widgets/navbar_widget.dart';
+import 'package:flutter_widgets/views/widgets_tree.dart';
 
 void main() {
   runApp(const MainApp());
@@ -21,11 +21,7 @@ class _MainAppState extends State<MainApp> {
         colorScheme: .fromSeed(seedColor: Colors.teal, brightness: .dark),
       ),
 
-      home: Scaffold(
-        appBar: AppBar(title: Text('Flutter'), centerTitle: true),
-
-        bottomNavigationBar: NavbarWidget(),
-      ),
+      home: WidgetsTree(),
     );
   }
 }
