@@ -18,32 +18,42 @@ class MainApp extends StatelessWidget {
           brightness: Brightness.dark,
         ),
       ),
-      home: SafeArea(
-        child: Scaffold(
-          appBar: AppBar(title: Text('Flutter'), centerTitle: true),
-          drawer: Drawer(
-            child: Column(children: [ListTile(title: Text('drawer'))]),
-          ),
-          floatingActionButton: Column(
-            mainAxisSize: .min,
-            children: [
-              FloatingActionButton(child: Icon(Icons.add), onPressed: () => {}),
-              SizedBox(height: 10),
-              FloatingActionButton(
-                child: Icon(Icons.remove),
-                onPressed: () => {},
-              ),
-            ],
-          ),
-          bottomNavigationBar: NavigationBar(
-            destinations: [
-              NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-              NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
-            ],
-            selectedIndex: 1,
-            onDestinationSelected: (value) => {},
-          ),
-        ),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int currentIndex = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    //HERE2
+    return Scaffold(
+      appBar: AppBar(title: Text('Flutter'), centerTitle: true),
+
+      body: currentIndex == 0
+          ? Center(child: Text('State 1'))
+          : Center(child: Text('State 2')),
+
+      bottomNavigationBar: NavigationBar(
+        destinations: [
+          NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+          NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+        ],
+        selectedIndex: currentIndex,
+        onDestinationSelected: (value) {
+          return setState(() {
+            currentIndex = value;
+          });
+        },
       ),
     );
   }
