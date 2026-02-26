@@ -80,11 +80,29 @@ class _ProfilePageState extends State<ProfilePage> {
               onTap: () {},
               splashColor: Colors.teal,
               child: Container(
-                height: 200,
+                height: 50,
                 width: .infinity,
                 color: Colors.white12,
               ),
             ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.teal,
+                foregroundColor: Colors.white,
+              ),
+              onPressed: () {},
+              child: Text('Click me'),
+            ),
+            ElevatedButton(onPressed: () {}, child: Text('Click me')),
+
+            FilledButton(onPressed: () {}, child: Text('Click me')),
+
+            TextButton(onPressed: () {}, child: Text('Click me')),
+
+            OutlinedButton(onPressed: () {}, child: Text('Click me')),
+
+            CloseButton(),
+            BackButton(),
           ],
         ),
       ),
