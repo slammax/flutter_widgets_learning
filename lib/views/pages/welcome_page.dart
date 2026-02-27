@@ -14,6 +14,8 @@ class WelcomePage extends StatelessWidget {
           mainAxisAlignment: .center,
           children: [
             HeroWidget(),
+
+            SizedBox(height: 20),
             FilledButton(
               onPressed: () {
                 Navigator.push(
@@ -25,6 +27,7 @@ class WelcomePage extends StatelessWidget {
                   ),
                 );
               },
+
               child: Text('Login'),
             ),
           ],

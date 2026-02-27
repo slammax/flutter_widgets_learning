@@ -14,15 +14,7 @@ class HomePage extends StatelessWidget {
           Column(
             mainAxisSize: .min,
             children: [
-              Container(
-                height: 200,
-                width: .infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50),
-                  color: const Color.fromARGB(65, 0, 150, 135),
-                ),
-                child: HeroWidget(),
-              ),
+              HeroWidget(borderRadius: 1000),
               SizedBox(height: 20),
               SizedBox(
                 width: .infinity,
