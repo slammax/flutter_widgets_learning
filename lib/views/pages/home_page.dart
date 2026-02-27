@@ -10,14 +10,35 @@ class HomePage extends StatelessWidget {
       padding: EdgeInsets.all(40),
       child: Column(
         children: [
-          Container(
-            height: 200,
-            width: .infinity,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              color: const Color.fromARGB(65, 0, 150, 135),
-            ),
-            child: HeroWidget(),
+          Column(
+            mainAxisSize: .min,
+            children: [
+              Container(
+                height: 200,
+                width: .infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  color: const Color.fromARGB(65, 0, 150, 135),
+                ),
+                child: HeroWidget(),
+              ),
+              SizedBox(height: 20),
+              SizedBox(
+                width: .infinity,
+                child: Card(
+                  child: Padding(
+                    padding: EdgeInsets.all(20),
+                    child: Column(
+                      children: [
+                        Text('Some text inside'),
+                        Text('Some text inside'),
+                        Text('Some text inside'),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
