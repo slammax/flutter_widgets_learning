@@ -16,7 +16,7 @@ class WelcomePage extends StatelessWidget {
             HeroWidget(),
             FilledButton(
               onPressed: () {
-                Navigator.pushReplacement(
+                Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) {

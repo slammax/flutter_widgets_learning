@@ -7,8 +7,20 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(10),
-      child: Column(children: [HeroWidget()]),
+      padding: EdgeInsets.all(40),
+      child: Column(
+        children: [
+          Container(
+            height: 200,
+            width: .infinity,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(50),
+              color: const Color.fromARGB(65, 0, 150, 135),
+            ),
+            child: HeroWidget(),
+          ),
+        ],
+      ),
     );
   }
 }
