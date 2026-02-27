@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/data/contants.dart';
 import 'package:flutter_widgets/views/widgets/hero_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -30,9 +31,18 @@ class HomePage extends StatelessWidget {
                     padding: EdgeInsets.all(20),
                     child: Column(
                       children: [
-                        Text('Some text inside'),
-                        Text('Some text inside'),
-                        Text('Some text inside'),
+                        Text(
+                          'Some text inside',
+                          style: KTextStyle.titleTealText,
+                        ),
+                        Text(
+                          'Some text inside',
+                          style: KTextStyle.descriptionText,
+                        ),
+                        Text(
+                          'Some text inside',
+                          style: KTextStyle.descriptionText,
+                        ),
                       ],
                     ),
                   ),
