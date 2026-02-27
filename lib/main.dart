@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widgets/data/notifiers.dart';
 import 'package:flutter_widgets/theme/dark_theme.dart';
 import 'package:flutter_widgets/theme/light_theme.dart';
-import 'package:flutter_widgets/views/widgets_tree.dart';
+import 'package:flutter_widgets/views/pages/welcome_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -27,7 +27,7 @@ class _MainAppState extends State<MainApp> {
           darkTheme: darkTheme,
           themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
 
-          home: WidgetsTree(),
+          home: WelcomePage(),
         );
       },
     );
