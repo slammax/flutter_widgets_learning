@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/views/pages/login_page.dart';
 import 'package:flutter_widgets/views/widgets/hero_widget.dart';
-import 'package:flutter_widgets/views/widgets_tree.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -22,7 +22,7 @@ class WelcomePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return WidgetsTree();
+                      return LoginPage();
                     },
                   ),
                 );
