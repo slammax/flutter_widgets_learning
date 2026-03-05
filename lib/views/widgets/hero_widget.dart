@@ -15,9 +15,26 @@ class HeroWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
+      alignment: AlignmentGeometry.center,
       children: [
-        Hero(tag: 'hero1', child: Image.asset('assets/images/bg.avif')),
-        Text(title),
+        Hero(
+          tag: 'hero1',
+          child: ClipRRect(
+            borderRadius: BorderRadiusGeometry.circular(30),
+            child: Image.asset('assets/images/bg.avif'),
+          ),
+        ),
+        FittedBox(
+          child: Text(
+            title,
+            style: TextStyle(
+              fontSize: 60,
+              fontWeight: .bold,
+              letterSpacing: 50,
+              color: Colors.yellow[50],
+            ),
+          ),
+        ),
       ],
     );
   }
