@@ -10,12 +10,22 @@ class ProfilePage extends StatelessWidget {
       padding: EdgeInsets.all(20),
       child: Column(
         mainAxisAlignment: .center,
-        mainAxisSize: .min,
         children: [
           SizedBox(
             height: 500,
             width: .infinity,
             child: Lottie.asset('assets/lotties/error_cat.json'),
+          ),
+          FittedBox(
+            child: Text(
+              'FLUTTER LEARN',
+              style: TextStyle(
+                fontWeight: .bold,
+                fontSize: 50,
+                letterSpacing: 50,
+                color: Colors.white,
+              ),
+            ),
           ),
         ],
       ),
