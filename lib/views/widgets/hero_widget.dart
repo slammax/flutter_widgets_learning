@@ -8,17 +8,6 @@ class HeroWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Hero(
-      tag: 'hero1',
-      child: Container(
-        height: 200,
-        width: .infinity,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(borderRadius),
-          color: const Color.fromARGB(65, 0, 150, 135),
-        ),
-        child: Image.asset('assets/images/logo.png'),
-      ),
-    );
+    return Hero(tag: 'hero1', child: Image.asset('assets/images/logo.png'));
   }
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/data/notifiers.dart';
-import 'package:flutter_widgets/views/pages/welcome_page.dart';
+import 'package:lottie/lottie.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -10,20 +9,13 @@ class ProfilePage extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(20),
       child: Column(
+        mainAxisAlignment: .center,
+        mainAxisSize: .min,
         children: [
-          ListTile(
-            title: Text('LogOut'),
-            onTap: () {
-              selectedPageNotifier.value = 0;
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (context) {
-                    return WelcomePage();
-                  },
-                ),
-              );
-            },
+          SizedBox(
+            height: 500,
+            width: .infinity,
+            child: Lottie.asset('assets/lotties/error_cat.json'),
           ),
         ],
       ),
