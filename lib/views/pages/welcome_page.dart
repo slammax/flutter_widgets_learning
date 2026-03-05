@@ -26,6 +26,17 @@ class WelcomePage extends StatelessWidget {
                   }
                 },
               ),
+              FittedBox(
+                child: Text(
+                  'Flutter Max',
+                  style: TextStyle(
+                    fontSize: 60,
+                    fontWeight: .bold,
+                    letterSpacing: 50,
+                    color: Colors.teal[200],
+                  ),
+                ),
+              ),
               SizedBox(height: 20),
               FilledButton(
                 style: FilledButton.styleFrom(minimumSize: Size(.infinity, 40)),
@@ -43,6 +54,7 @@ class WelcomePage extends StatelessWidget {
                 child: Text('Get Started'),
               ),
               TextButton(
+                style: FilledButton.styleFrom(minimumSize: Size(.infinity, 40)),
                 onPressed: () {
                   Navigator.push(
                     context,

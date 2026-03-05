@@ -21,7 +21,11 @@ class HeroWidget extends StatelessWidget {
           tag: 'hero1',
           child: ClipRRect(
             borderRadius: BorderRadiusGeometry.circular(30),
-            child: Image.asset('assets/images/bg.avif'),
+            child: Image.asset(
+              'assets/images/bg.avif',
+              color: Colors.teal,
+              colorBlendMode: .darken,
+            ),
           ),
         ),
         FittedBox(
