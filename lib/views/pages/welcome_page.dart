@@ -65,7 +65,6 @@ class WelcomePage extends StatelessWidget {
                     ),
                   );
                 },
-
                 child: Text('Login'),
               ),
             ],

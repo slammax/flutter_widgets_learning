@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -10,15 +9,11 @@ class ProfilePage extends StatelessWidget {
       padding: EdgeInsets.all(20),
       child: Column(
         mainAxisAlignment: .center,
+        mainAxisSize: .max,
         children: [
-          SizedBox(
-            height: 500,
-            width: .infinity,
-            child: Lottie.asset('assets/lotties/error_cat.json'),
-          ),
           FittedBox(
             child: Text(
-              'FLUTTER LEARN',
+              'PROFILE',
               style: TextStyle(
                 fontWeight: .bold,
                 fontSize: 50,
