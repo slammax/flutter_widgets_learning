@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/views/pages/login_page.dart';
-import 'package:flutter_widgets/views/widgets/hero_widget.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -13,8 +12,6 @@ class WelcomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: .center,
           children: [
-            HeroWidget(),
-
             SizedBox(height: 20),
             FilledButton(
               onPressed: () {

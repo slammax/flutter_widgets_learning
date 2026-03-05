@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/views/widgets/hero_widget.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -7,7 +8,10 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Padding(padding: const EdgeInsets.all(10.0), child: Column()),
+      body: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Column(children: [HeroWidget(title: 'Login')]),
+      ),
     );
   }
 }

@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
                   color: Colors.teal,
                   borderRadius: BorderRadius.circular(500),
                 ),
-                child: HeroWidget(),
+                child: HeroWidget(title: 'Home'),
               ),
               SizedBox(height: 20),
               SizedBox(
