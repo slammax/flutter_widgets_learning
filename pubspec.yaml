@@ -7,6 +7,7 @@ environment:
   sdk: ^3.11.0
 
 dependencies:
+  dotlottie_loader: ^0.0.5
   flutter:
     sdk: flutter
   lottie: ^3.3.2
