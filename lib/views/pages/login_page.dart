@@ -26,46 +26,50 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          children: [
-            HeroWidget(title: 'Login'),
-            SizedBox(height: 20),
-            TextField(
-              controller: controllerEmail,
-              decoration: InputDecoration(
-                hintText: 'Email',
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(15),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            children: [
+              HeroWidget(title: 'Login'),
+              SizedBox(height: 20),
+              TextField(
+                controller: controllerEmail,
+                decoration: InputDecoration(
+                  hintText: 'Email',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
                 ),
+                onEditingComplete: () {
+                  setState(() {});
+                },
               ),
-              onEditingComplete: () {
-                setState(() {});
-              },
-            ),
-            SizedBox(height: 20),
-            TextField(
-              controller: controllerPassword,
-              decoration: InputDecoration(
-                hintText: 'Password',
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(15),
+              SizedBox(height: 20),
+              TextField(
+                controller: controllerPassword,
+                decoration: InputDecoration(
+                  hintText: 'Password',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
                 ),
+                onEditingComplete: () {
+                  setState(() {});
+                },
               ),
-              onEditingComplete: () {
-                setState(() {});
-              },
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(minimumSize: Size(.infinity, 40)),
-              onPressed: () {
-                onLoginPressed();
-              },
-              child: Text('Login'),
-            ),
-          ],
+              SizedBox(height: 20),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(.infinity, 40),
+                ),
+                onPressed: () {
+                  onLoginPressed();
+                },
+                child: Text('Login'),
+              ),
+            ],
+          ),
         ),
       ),
     );
