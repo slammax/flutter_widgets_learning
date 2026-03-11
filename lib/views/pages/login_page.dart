@@ -3,15 +3,17 @@ import 'package:flutter_widgets/views/widgets/hero_widget.dart';
 import 'package:flutter_widgets/views/widgets_tree.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  const LoginPage({super.key, required this.title});
+
+  final String title;
 
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
-  TextEditingController controllerEmail = TextEditingController();
-  TextEditingController controllerPassword = TextEditingController();
+  TextEditingController controllerEmail = TextEditingController(text: '123');
+  TextEditingController controllerPassword = TextEditingController(text: '456');
   String confirmedEmail = '123';
   String confirmedPasswod = '456';
 
@@ -31,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
-              HeroWidget(title: 'Login'),
+              HeroWidget(title: widget.title),
               SizedBox(height: 20),
               TextField(
                 controller: controllerEmail,
@@ -66,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   onLoginPressed();
                 },
-                child: Text('Login'),
+                child: Text(widget.title),
               ),
             ],
           ),
