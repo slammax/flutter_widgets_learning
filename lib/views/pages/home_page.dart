@@ -7,48 +7,50 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(40),
-      child: Column(
-        children: [
-          Column(
-            mainAxisSize: .min,
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.teal,
-                  borderRadius: BorderRadius.circular(500),
+    return SingleChildScrollView(
+      child: Padding(
+        padding: EdgeInsets.all(40),
+        child: Column(
+          children: [
+            Column(
+              mainAxisSize: .min,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(500),
+                  ),
+                  child: HeroWidget(title: 'Home'),
                 ),
-                child: HeroWidget(title: 'Home'),
-              ),
-              SizedBox(height: 20),
-              SizedBox(
-                width: .infinity,
-                child: Card(
-                  child: Padding(
-                    padding: EdgeInsets.all(20),
-                    child: Column(
-                      children: [
-                        Text(
-                          'Some text inside',
-                          style: KTextStyle.titleTealText,
-                        ),
-                        Text(
-                          'Some text inside',
-                          style: KTextStyle.descriptionText,
-                        ),
-                        Text(
-                          'Some text inside',
-                          style: KTextStyle.descriptionText,
-                        ),
-                      ],
+                SizedBox(height: 20),
+                SizedBox(
+                  width: .infinity,
+                  child: Card(
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Some text inside',
+                            style: KTextStyle.titleTealText,
+                          ),
+                          Text(
+                            'Some text inside',
+                            style: KTextStyle.descriptionText,
+                          ),
+                          Text(
+                            'Some text inside',
+                            style: KTextStyle.descriptionText,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
