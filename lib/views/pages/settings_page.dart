@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/views/pages/expended_page.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key, required this.title});
@@ -152,8 +153,17 @@ class _ProfilePageState extends State<SettingsPage> {
                   backgroundColor: Colors.teal,
                   foregroundColor: Colors.white,
                 ),
-                onPressed: () {},
-                child: Text('Click me'),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return ExpendedPage();
+                      },
+                    ),
+                  );
+                },
+                child: Text('Show flexible'),
               ),
               ElevatedButton(onPressed: () {}, child: Text('Click me')),
 
