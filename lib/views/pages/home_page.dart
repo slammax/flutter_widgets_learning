@@ -22,6 +22,7 @@ class HomePage extends StatelessWidget {
                   ),
                   child: HeroWidget(title: 'Home'),
                 ),
+
                 SizedBox(height: 20),
                 SizedBox(
                   width: .infinity,
