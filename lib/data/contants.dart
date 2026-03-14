@@ -9,3 +9,7 @@ class KTextStyle {
 
   static const TextStyle descriptionText = TextStyle(fontSize: 10);
 }
+
+class KConstats {
+  static const String themeModeKey = 'themeModeKey';
+}
